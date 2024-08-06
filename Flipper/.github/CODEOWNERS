@@ -1,1 +1,27 @@
+# This is a comment line
 
+# Define owners for the entire repository
+*       @lukas-havlicek
+
+# Define owners for specific directories
+/docs/  @lukas-havlicek
+/src/   @lukas-havlicek
+
+# Define owners for specific files
+README.md   @lukas-havlicek
+main.py     @lukas-havlicek
+
+# Define owners for specific file types
+*.js    @lukas-havlicek
+*.py    @lukas-havlicek
+
+# Define owners for specific subdirectories
+/src/frontend/  @lukas-havlicek
+/src/backend/   @lukas-havlicek
+
+# Define owners for specific file paths with more specificity
+/src/backend/utils/* @lukas-havlicek
+
+# Define owners using teams from an organization
+# Here, @org/team-name specifies that the team from the org is responsible
+/.github/ @org/github-admins
