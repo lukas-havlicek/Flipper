@@ -15,7 +15,7 @@ struct GameView: View {
   @State private var geometrySize = CGSize.zero
   @State private var showOptions = false
   @State private var showNameTextFieldAlert = false
-  @State private var dragOffset = UIScreen.main.bounds.width
+  @State private var dragOffset = UIScreen.main.bounds.width + 10
   
   private let spriteOptions: SpriteView.Options = [.allowsTransparency, .ignoresSiblingOrder, .shouldCullNonVisibleNodes]
   private let spriteDebugOptions: SpriteView.DebugOptions = []//[.showsPhysics]
@@ -68,7 +68,7 @@ struct GameView: View {
       .onEnded { _ in
         if dragOffset == screenWidth - 200 {
           withAnimation(.easeInOut) {
-            dragOffset = screenWidth
+            dragOffset = screenWidth + 10
           }
         }
         showNameTextFieldAlert = false
@@ -87,7 +87,7 @@ struct GameView: View {
       .onEnded { value in
         if value.translation.width > 20 {
           withAnimation {
-            dragOffset = screenWidth
+            dragOffset = screenWidth + 10
           }
         } else {
           withAnimation {
