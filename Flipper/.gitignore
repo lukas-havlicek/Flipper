@@ -1,0 +1,105 @@
+# Xcode
+#
+# User-specific files
+xcuserdata/
+
+# Scheme-specific files
+*.xcscheme
+*.xcuserstate
+
+# Build products
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Provisioning profiles
+*.mobileprovision
+
+# Bundle artifacts
+*.xcworkspace
+
+# Other
+!default.xcworkspace
+
+# Index
+*.xccheckout
+*.xcscmblueprint
+
+# Swift Package Manager
+#
+# Xcode automatically generates this directory with the Swift Package Manager.
+# You should not check in the .build directory from your own projects.
+.build/
+# If you're using the swift package generate-xcodeproj command, you should ignore
+# the generated Xcode project.
+*.xcodeproj/
+# Packages are usually handled by the Swift Package Manager, but you can use this
+# file to ignore specific directories that might be generated as part of the build process.
+Packages/
+Package.pins
+Package.resolved
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are described at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory
+Pods/
+# Add this line if you're using the Cocoapods plugin.
+.cocoapods/
+
+# Carthage
+#
+# Add this line if you're using Carthage.
+Carthage/Build/
+
+# Fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+
+# Code Injection
+#
+# Avoid pushing files from the InjectionIII tool
+*.codeinject
+
+# Archives
+*.xcarchive
+
+# Google Service Info
+GoogleService-Info.plist
+
+# Firebase
+firebase-debug.log
+
+# macOS
+#
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+#
+Thumbs.db
+ehthumbs.db
+
+# Microsoft Office
+#
+*.docx
+*.xlsx
+*.pptx
+
+# Node
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
